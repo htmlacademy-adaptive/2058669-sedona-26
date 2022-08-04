@@ -1,0 +1,326 @@
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 284px;
+  height: 58px;
+  background: #81b3d2;
+  color: #ffffff;
+  border: none;
+}
+.title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.description {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.page__body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+}
+.main-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.gallery__wrapper {
+  margin: 0 20px;
+}
+.main-header-logo__image {
+  display: block;
+  margin: 0 auto;
+}
+.main-footer__wrapper {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 0 22px 0;
+}
+.hashtag-title.title {
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+}
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social__link {
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: block;
+  position: relative;
+}
+.social__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+.main-footer__copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.copyright__description {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+.main-nav {
+  background-color: #81b3d2;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.site-list-item__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.main-nav__toggle {
+  display: block;
+  margin: 0 auto;
+}
+.intro-background-wrapper {
+  background-image: url("../img/big-intro-background-wrapper-mobile.jpg");
+  background-color: #d9e7f2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.intro-background-wrapper__logo {
+  display: block;
+  margin: 0 auto;
+  padding: 90px 19px 85px;
+}
+.intro-background-subwrapper__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  margin-bottom: 35px;
+}
+.intro-background-subwrapper__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.advantages__item {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 25px 0;
+}
+.advantages__item--main {
+  background: #81b3d2;
+  padding: 54px 0 40px 0;
+}
+.advantages__item--main .advantages__number {
+  color: #ffffff;
+}
+.advantages__item--image-housing,
+.advantages__item--image-food,
+.advantages__item--image-souvenirs {
+  background-color: #ffffff;
+}
+.advantages__item--image-housing .advantages__title,
+.advantages__item--image-food .advantages__title,
+.advantages__item--image-souvenirs .advantages__title {
+  margin-bottom: 16px;
+}
+.advantages__title,
+.advantages__description {
+  margin: 0;
+  padding: 0;
+}
+.advantages__item--main .advantages__title {
+  color: #ffffff;
+}
+.advantages__item--main .advantages__description {
+  color: #ffffff;
+}
+.advantages__number {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+  margin-top: 11px;
+}
+.advantages__item.advantages-photo {
+  height: 260px;
+}
+.advantages-photo {
+  padding: 0;
+}
+.search-hostel__wrapper {
+  padding: 38px 0 49px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+.search-hostel__title,
+.search-hostel__description {
+  margin: 0;
+  padding: 0;
+}
+.search-hostel__title {
+  margin-bottom: 16px;
+}
+.search-hostel__description {
+  margin-bottom: 32px;
+}
+.intro-background-wrapper.gallery-wrapper {
+  background-image: url("../img/small-intro-background-wrapper-mobile.jpg");
+  background-color: #d9e7f2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.intro-background-wrapper__logo-gallery {
+  padding: 52px 45px 67px;
+}
+.intro-gallery-background-subwrapper__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  margin-bottom: 24px;
+}
+.intro-gallery-background-subwrapper__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+}
+.gallery__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gallery-item {
+  margin: 25px 0;
+}
+.gallery-item__title.title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+.gallery-item__autor.description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+  text-transform: none;
+  text-align: left;
+}
+.gallery-item__like-amount.title {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+.gallery-item__title-video.title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 38px;
+}
+.gallery-item__description-video.description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 38px;
+}
+.intro-background-wrapper.form-wrapper {
+  background-image: url("../img/small-intro-background-wrapper-mobile.jpg");
+  background-color: #d9e7f2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.intro-background-wrapper__logo-form {
+  padding: 52px 45px 67px;
+}
+.intro-form-background-subwrapper__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 36px;
+  margin-bottom: 24px;
+}
+.intro-form-background-subwrapper__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+.form-item__field {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form__item {
+  border: none;
+}
+.form-item__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.button-wrapper {
+  text-align: center;
+}
+.item-field__control {
+  margin-bottom: 15px;
+  min-height: 58px;
+  min-width: 58px;
+  background-color: #f2f2f2;
+  border: none;
+}
+.form-item__feedback-comment {
+  background-color: #f2f2f2;
+  border: none;
+  min-width: 279px;
+  min-height: 150px;
+  text-align: left;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
