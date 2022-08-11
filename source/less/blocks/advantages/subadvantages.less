@@ -1,0 +1,60 @@
+.subadvantages-wrapper {
+  margin: 23px 18px 53px 65px;
+  width: 240px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+.advantages__item--image-housing,
+.advantages__item--image-food,
+.advantages__item--image-souvenirs {
+  background-color: @white;
+  padding: 8px 0 33px 0;
+
+  .advantages__description {
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      text-align: center;
+    }
+  }
+
+  .advantages__title {
+    margin-bottom: 16px;
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 158px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 158px;
+  }
+}

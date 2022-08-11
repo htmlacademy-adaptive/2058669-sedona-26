@@ -2,3 +2,26 @@
   display: block;
   margin: 0 auto;
 }
+
+.main-header__logo {
+  height: 96px;
+  margin-bottom: -40px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    z-index: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 3;
+  }
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  background-color: @white;
+  color: @black;
+  position: relative;
+}
+
