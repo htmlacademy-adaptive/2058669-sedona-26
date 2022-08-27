@@ -1,7 +1,22 @@
 .form-item__feedback-comment {
   background-color: @lightgrey;
   border: none;
-  min-width: 279px;
-  min-height: 150px;
+  min-width: 275px;
+  min-height: 146px;
   text-align: left;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 19px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    min-height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    min-height: 160px;
+  }
 }

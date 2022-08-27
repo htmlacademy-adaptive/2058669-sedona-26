@@ -18,10 +18,11 @@
 }
 
 .hashtag-title.title {
-  font-size: 21px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   margin-bottom: 33px;
+  margin-top: 1px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -47,6 +48,18 @@
   background-color: @blue;
   display: block;
   position: relative;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__icon {
@@ -63,8 +76,7 @@
 }
 
 .main-footer__copyright {
-  display: flex;
-  justify-content: center;
+
   margin-top: 40px;
 
   @media (min-width: @tablet-width) {
@@ -79,7 +91,29 @@
 .copyright__description {
   margin: 0;
   padding: 0;
+  font-size: 12px;
   margin-right: 13px;
-  margin-top: 5px;
+  margin-top: 8px;
   color: @black;
+}
+
+.copyright__link {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+
+  &:hover {
+    .copyright__description,
+    .copyright__icon {
+      color: @blue;
+      fill: @blue;
+    }
+  }
+
+  &:active {
+    .copyright__description,
+    .copyright__icon {
+      opacity: 0.3;
+    }
+  }
 }

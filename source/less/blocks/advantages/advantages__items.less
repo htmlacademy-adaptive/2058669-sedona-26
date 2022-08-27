@@ -7,32 +7,146 @@
 .advantages__item {
   background-color: #eeeeee;
   text-align: center;
-  padding: 25px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
     padding-top: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     padding-top: 42px;
   }
 }
 
 .advantages__item--main {
   background: @blue;
-  padding: 54px 0 40px 0;
 
   .advantages__number {
     color: @white;
   }
 }
 
-.advantages__title,
+.advantages__title {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 123px;
+    font-size: 18px;
+  }
+}
+
 .advantages__description {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 45px;
+  }
+}
+
+.advantages__item--image-housing .advantages__title::before {
+  background-image: url("../img/icons/icon-house.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 39px;
+  height: 37px;
+  position: absolute;
+  left: -47px;
+  top: 1px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icons/icon-house-table-desktop.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    left: 90px;
+    top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/icons/icon-house-table-desktop.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    left: 163px;
+  }
+}
+
+.advantages__item--image-food .advantages__title::before {
+  background-image: url("../img/icons/icon-burger.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  left: -47px;
+  top: 137px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icons/icon-burger-table-desktop.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 76px;
+    height: 68px;
+    position: absolute;
+    top: 64px;
+    left: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/icons/icon-burger-table-desktop.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 76px;
+    height: 68px;
+    position: absolute;
+    left: 565px;
+  }
+}
+
+.advantages__item--image-souvenirs .advantages__title::before {
+  background-image: url("../img/icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 32px;
+  height: 38px;
+  position: absolute;
+  left: -43px;
+  top: 249px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icons/icon-gift-table-desktop.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 64px;
+    height: 75px;
+    position: absolute;
+    left: 610px;
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/icons/icon-gift-table-desktop.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 64px;
+    height: 75px;
+    position: absolute;
+    left: 970px;
+  }
 }
 
 .advantages__item--main .advantages__title {
@@ -46,8 +160,20 @@
 .advantages__number {
   margin: 0;
   padding: 0;
-  margin-bottom: 17px;
-  margin-top: 11px;
+  margin-bottom: 14px;
+  margin-top: 7px;
+  font-size: 13px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+    margin-top: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 21px;
+    margin-top: 11px;
+  }
 }
 
 .advantages__item.advantages-photo-1,
@@ -86,4 +212,114 @@
       grid-row: 3/4;
     }
   }
+}
+
+.advantages__item--divider {
+  padding-top: 52px;
+  padding-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 28px;
+  }
+}
+
+.wrapper-main-title {
+  margin-top: 20px;
+}
+
+.wrapper-main-description {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.wrapper-second-main {
+  padding-bottom: 34px;
+  padding-top: 41px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 50px;
+  }
+
+  title {
+    margin-top: 16px;
+  }
+}
+
+.wrapper-item-1 {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 28px;
+  }
+
+  .description {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d6d6d6;
+
+    @media (max-width: @mobile-width-only) {
+      margin: 0 20px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 0;
+      border: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 0;
+      border: 0;
+    }
+  }
+}
+
+.wrapper-item-2 .description {
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 24px;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 0 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    border: 0;
+  }
+}
+
+.wrapper-item-3 .description {
+  padding-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.wrapper-item-2,
+.wrapper-item-3 {
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+  }
+}
+
+.map__wrapper {
+  margin-bottom: 10px;
 }
