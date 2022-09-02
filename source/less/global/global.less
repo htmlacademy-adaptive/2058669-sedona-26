@@ -21,19 +21,25 @@ img {
 }
 
 @media (max-width: @mobile-width-only) {
-  br.title-br {
+  br.title-br,
+  br.search-description-br,
+  br.advantages-description-br {
     display: none;
   }
 }
 
 @media (min-width: @tablet-width) {
-  br:not(.title-br) {
+  br:not(.title-br, .search-description-br) {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  br:not(.title-br) {
+  br:not(.title-br, .search-description-br, .advantages-description-br) {
     display: none;
+  }
+
+  br.advantages-description-br {
+    display: inline;
   }
 }
