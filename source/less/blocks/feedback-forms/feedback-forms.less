@@ -23,7 +23,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 12px 44px 45px 0;
+    padding: 12px 50px 45px 0;
     margin: 0;
   }
 }
@@ -43,13 +43,13 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    padding-left: 44px;
+    padding-left: 78px;
 
     .form-item__subtitle {
       margin: 0;
       padding: 0;
       margin-bottom: 27px;
-      margin-left: -24px;
+      margin-left: -33px;
     }
   }
 }
@@ -60,20 +60,20 @@
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
-    font-size: 18px;
+    font-size: 21px;
     padding-left: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 18px;
-    padding-left: 40px;
+    font-size: 21px;
+    padding-left: 55px;
   }
 }
 
 .button-wrapper {
   text-align: right;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   padding-right: 20px;
 
   @media (min-width: @tablet-width) {
@@ -88,7 +88,8 @@
     grid-column: 1/3;
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    width: 770px;
+    padding: 0 96px;
     padding-bottom: 64px;
   }
 }
@@ -145,7 +146,9 @@
 
   @media (min-width: @desktop-width) {
     margin: 120px;
-    padding-top: 52px;
+    margin-top: 69px;
+    margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -156,18 +159,35 @@
 
 .item-field__control--guest-info[placeholder] {
   padding-left: 15px;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .item-field__control--contacts-info[placeholder] {
   padding-left: 15px;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 4px;
 }
 
-.item-field__control[type="tel"],
-.item-field__control[type="email"] {
-  font-size: 16px;
-  padding-top: 4px;
+input.item-field__control--guest-info::-webkit-input-placeholder {
+  color: @black;
+}
+
+input.item-field__control--guest-info::-moz-placeholder {
+  color: @black;
+}
+
+input.item-field__control--contacts-info::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input.item-field__control--contacts-info:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .item-field__icon-phone,
@@ -226,10 +246,21 @@
 .item-field__label--radio-checkbox {
   margin-bottom: 35px;
   margin-left: 60px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .form-item-3 .title {
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .item-field__control-mark--radio {
@@ -274,16 +305,17 @@
     margin-top: 4px;
     padding-left: 36px;
     padding-top: 14px;
-    padding-right: 65px;
+    padding-right: 77px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 4px;
-    padding-left: 36px;
-    padding-top: 14px;
-    padding-right: 65px;
+    margin-top: 12px;
+    padding-left: 55px;
+    padding-top: 32px;
+    padding-right: 55px;
+    padding-bottom: 47px;
   }
 }
 
@@ -300,11 +332,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 17px;
+    padding-bottom: 63px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 84px;
-    padding-right: 118px;
+    padding-left: 46px;
+    padding-right: 38px;
     justify-content: space-between;
   }
 }
@@ -316,17 +348,19 @@
     padding: 0;
     width: 410px;
     margin-bottom: 25px;
+    padding-left: 25px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    padding-left: 0;
     width: 410px;
-    margin-bottom: 28px;
+    margin-bottom: 56px;
   }
 }
 
 .form-item-5 {
-  padding-bottom: 51px;
+  padding-bottom: 52px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -334,12 +368,13 @@
 
     .title {
       margin-bottom: 26px;
+      padding-left: 0;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
-    padding-bottom: 40px;
+    padding: 0 95px;
+    padding-bottom: 41px;
 
     .title {
       margin-bottom: 26px;
@@ -361,8 +396,8 @@
 }
 
 .button-feedback {
-  font-size: 18px;
   width: 281px;
+  padding-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     min-width: 324px;
@@ -370,25 +405,35 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 324px;
+    width: 384px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .form-item__note {
   margin: 0;
-  text-align: right;
-  margin-top: 1px;
-  font-size: 11px;
+  margin-top: 3px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
-    font-size: 12px;
+    margin-top: 25px;
+    font-size: 14px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 20px;
-    font-size: 12px;
+    margin-top: 24px;
   }
 }
 

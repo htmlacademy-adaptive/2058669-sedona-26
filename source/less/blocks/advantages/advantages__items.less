@@ -31,12 +31,12 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0 60px;
+    padding: 0 50px;
+    font-size: 21px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 123px;
-    font-size: 18px;
   }
 }
 
@@ -45,7 +45,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0 35px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -71,7 +71,7 @@
     height: 72px;
     position: absolute;
     left: 90px;
-    top: 62px;
+    top: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -103,7 +103,7 @@
     height: 68px;
     position: absolute;
     top: 64px;
-    left: 350px;
+    left: 345px;
   }
 
   @media (min-width: @desktop-width) {
@@ -134,7 +134,7 @@
     width: 64px;
     height: 75px;
     position: absolute;
-    left: 610px;
+    left: 607px;
     top: 57px;
   }
 
@@ -162,12 +162,12 @@
   padding: 0;
   margin-bottom: 14px;
   margin-top: 7px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 21px;
-    margin-top: 11px;
+    margin-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -216,6 +216,10 @@
 
 .advantages-photo__image {
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    height: 256px;
+  }
 }
 
 .advantages__item--divider {
@@ -224,7 +228,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 25px;
+    padding-top: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -238,13 +242,26 @@
 }
 
 .wrapper-main-description {
-  font-size: 12px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    padding: 0 60px;
+  }
 }
 
 .wrapper-second-main {
-  padding-bottom: 34px;
-  padding-top: 41px;
+  padding-bottom: 35px;
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 34px;
+    padding-top: 43px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 50px;
@@ -289,12 +306,12 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    padding: 0 55px;
     border: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 0;
+    padding: 0 55px;
     border: 0;
   }
 }
@@ -303,11 +320,11 @@
   padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    padding: 0 40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 0;
+    padding: 0 40px;
   }
 }
 
@@ -326,6 +343,14 @@
 
 .map__wrapper {
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .map__image {

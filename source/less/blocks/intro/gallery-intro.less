@@ -14,6 +14,15 @@
   @media (min-width: @desktop-width) {
     height: 290px;
     background-image: url("../img/small-intro-background-wrapper-desktop.jpg");
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/small-intro-background-wrapper-tablet-2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/small-intro-background-wrapper-desktop-2x.jpg");
   }
 }
 
@@ -21,7 +30,7 @@
   display: block;
   margin: auto;
   position: absolute;
-  top: -15px;
+  top: -22px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -34,29 +43,38 @@
   @media (min-width: @desktop-width) {
     width: 457px;
     height: 78px;
+    top: -19px;
   }
 }
 
 .intro-gallery-background-subwrapper {
-  margin-bottom: 45px;
+  margin-bottom: 43px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 87px;
+    margin-top: 67px;
+  }
 }
 
 .intro-gallery-background-subwrapper__title {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  margin-bottom: 24px;
+  padding-top: 31px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    font-size: 27px;
-    margin-top: 33px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 27px;
     margin-top: 33px;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -66,11 +84,11 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 0 160px;
+    padding: 0 161px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding: 0 160px;
+    padding: 0 385px;
   }
 }
