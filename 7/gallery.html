@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="source/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <base href="https://htmlacademy-adaptive.github.io/2058669-sedona-26/7/">
+</head>
+  <body class="page__body">
+    <div class="main-wrapper">
+      <header class="main-header">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header-logo__image" src="img/logotype-mobilel.svg"
+          height="96px"  width="185px" alt="Туристический городок «Седона».">
+        </a>
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs main-nav__toggle--gallery" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list-item">
+                <a class="site-list-item__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--current site-list-item">
+                <a class="site-list-item__link" href="gallery.html">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="site-list__item site-list-item">
+                <a class="site-list-item__link" href="form.html">
+                  Форма отзыва
+                </a>
+              </li>
+              <li class="site-list__item site-list-item">
+                <a class="site-list-item__link" href="https://htmlacademy.ru">
+                  HTML ACADEMY
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main-container">
+        <header class="intro">
+          <div class="intro__wrapper intro-background-wrapper gallery-wrapper">
+            <img class="intro-background-wrapper__logo-gallery" src="img/sedona-text-logotype.svg" width="229px" height="39px" alt="Седона">
+          </div>
+          <div class="intro__wrapper intro-gallery-background-subwrapper">
+            <h1 class="intro-gallery-background-subwrapper__title title">Фото и видео</h1>
+            <p class="intro-gallery-background-subwrapper__description description">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут вам<br> забыть о политике и экономике.</p>
+          </div>
+        </header>
+
+        <section class="gallery">
+          <div class="gallery__wrapper">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img class="gallery-item__image image-first" src="img/photo-1-mobile.jpg" width="280px" height="280px" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фотография просторов">
+                </picture>
+                  <div class="gallery-item-wrapper">
+                    <p class="gallery-item__title title">Неродные просторы</p>
+                    <p class="gallery-item__autor description">Автор фото: Борис</p>
+                    <span class="gallery-item__like amount-like title">
+                      <svg class="like-icon" width="23" height="21">
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                      </svg>
+                        1350
+                    </span>
+                  </div>
+              </li>
+
+              <li class="gallery__item">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img class="gallery-item__image" src="img/photo-2-mobile.jpg" width="280px" height="280px" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фотография растительности">
+                </picture>
+                <div class="gallery-item-wrapper">
+                    <p class="gallery-item__title title">Местная растительность</p>
+                    <p class="gallery-item__autor description">Автор фото: Сергей</p>
+                    <span class="gallery-item__like amount-like title">
+                      <svg class="like-icon" width="23" height="21">
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                      </svg>
+                        143
+                    </span>
+                  </div>
+              </li>
+
+              <li class="gallery__item">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img class="gallery-item__image" src="img/photo-3-mobile.jpg" width="280px" height="280px" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фотография дороги">
+                </picture>
+                  <div class="gallery-item-wrapper">
+                    <p class="gallery-item__title title">Дорога на север</p>
+                    <p class="gallery-item__autor description">Автор фото: Петр</p>
+                    <span class="gallery-item__like amount-like title">
+                      <svg class="like-icon" width="23" height="21">
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                      </svg>
+                        96
+                    </span>
+                  </div>
+              </li>
+
+              <li class="gallery__item">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img class="gallery-item__image" src="img/photo-4-mobile.jpg" width="280px" height="280px" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фотография моста">
+                </picture>
+                <div class="gallery-item-wrapper">
+                    <p class="gallery-item__title title">Мост дьявола</p>
+                    <p class="gallery-item__autor description">Автор фото: Антон</p>
+                    <span class="gallery-item__like amount-like title">
+                      <svg class="like-icon" width="23" height="21">
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                      </svg>
+                        254
+                    </span>
+                  </div>
+              </li>
+            </ul>
+
+              <section class="gallery__item--video-item">
+                <div class="gallery-item-video-wrapper">
+                  <p class="gallery-item__title-video title">Все еще сомневаетесь?</p>
+                  <p class="gallery-item__description-video description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+                </div>
+                <picture>
+                    <source media="(min-width: 1280px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                    <img class="gallery-item__image--video-item" src="img/video-mobile.jpg" width="280px" height="177px" srcset="img/video-mobile@2x.jpg 2x" alt="Видео-превью презентации">
+                  </picture>
+                <span class="gallery-item__marker"></span>
+              </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__hashtag hashtag">
+            <p class="hashtag-title title">#VISITSEDONA</p>
+          </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <svg class="social__icon" width="24" height="14" fill="none">
+                    <use xlink:href="img/sprite.svg#social-icon-vk"></use>
+                  </svg>
+
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <svg class="social__icon" width="22" height="18" fill="none">
+                    <use xlink:href="img/sprite.svg#social-icon-tlg"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Телеграме</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <svg class="social__icon" width="20" height="14" fill="none">
+                    <use xlink:href="img/sprite.svg#social-icon-youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Ютубе</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright__description description">Разработано</p>
+              <svg class="copyright__icon" width="27" height="35">
+                <use xlink:href="img/sprite.svg#copyright-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
