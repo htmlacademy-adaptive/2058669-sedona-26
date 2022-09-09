@@ -18,6 +18,7 @@
   margin: 0;
   padding-bottom: 22px;
   padding-top: 25px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -157,5 +158,19 @@
     background-color: #0000004d;
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .gallery__item::after,
+  .gallery__item--video-item::after {
+    background-image: url("../img/line-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    content: "";
+    height: 2px;
+    width: 320px;
   }
 }

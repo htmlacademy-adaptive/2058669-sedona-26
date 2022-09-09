@@ -60,14 +60,49 @@
   }
 }
 
+.video-wrapper {
+  position: relative;
+}
+
+.gallery-item__marker {
+  position: absolute;
+  background: none;
+  border: none;
+  padding: 0;
+  top: 62px;
+  left: 124px;
+
+  @media (min-width: @tablet-width) {
+    top: 223px;
+    left: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 223px;
+    left: 576px;
+  }
+
+  .button-play-icon {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
 .gallery-item-video-wrapper {
   margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 88px;
+    margin-bottom: 87px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 85px;
+    margin-bottom: 84px;
   }
 }
