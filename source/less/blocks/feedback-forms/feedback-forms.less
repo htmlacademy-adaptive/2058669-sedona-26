@@ -37,7 +37,7 @@
       margin: 0;
       padding: 0;
       margin-bottom: 27px;
-      margin-left: -24px;
+      margin-left: -20px;
     }
   }
 
@@ -207,7 +207,7 @@ input.item-field__control--contacts-info:-moz-placeholder {
 }
 
 .item-field__icon-phone::before {
-  background-image: url("../img/icons/phone.svg");
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   content: "";
   position: absolute;
@@ -216,7 +216,7 @@ input.item-field__control--contacts-info:-moz-placeholder {
 }
 
 .item-field__icon-email::before {
-  background-image: url("../img/icons/mail.svg");
+  background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
   content: "";
   position: absolute;
@@ -364,7 +364,7 @@ input.item-field__control--contacts-info:-moz-placeholder {
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 41px;
 
     .title {
       margin-bottom: 26px;
@@ -385,7 +385,7 @@ input.item-field__control--contacts-info:-moz-placeholder {
 
 .item-field__control-checkbox[type="checkbox"]:checked + .item-field__control-mark--checkbox::before {
   content: "";
-  background-image: url("../img/icons/checkbox.svg");
+  background-image: url("../img/checkbox.svg");
   width: 22px;
   height: 16px;
   position: absolute;
@@ -439,7 +439,7 @@ input.item-field__control--contacts-info:-moz-placeholder {
 
 @media (max-width: @mobile-width-only) {
   .form-item__subtitle::after {
-    background-image: url("../img/icons/line-mobile.svg");
+    background-image: url("../img/line-mobile.svg");
     background-repeat: no-repeat;
     position: absolute;
     left: -2px;
@@ -447,5 +447,128 @@ input.item-field__control--contacts-info:-moz-placeholder {
     content: "";
     height: 2px;
     width: 320px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-item-1 .form-item__subtitle::after {
+    background-image: url("../img/line-long.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 323px;
+    top: 0;
+    content: "";
+    height: 338px;
+    width: 2px;
+  }
+
+  .form-item-3 .form-item__subtitle::after {
+    background-image: url("../img/line-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -2px;
+    top: 10px;
+    content: "";
+    height: 2px;
+    width: 123px;
+  }
+
+  .form-item-3 .form-item__subtitle::before {
+    background-image: url("../img/line-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -2px;
+    top: 10px;
+    content: "";
+    height: 2px;
+    width: 123px;
+  }
+
+  .form-item-4 .form-item__subtitle::after {
+    background-image: url("../img/line-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -2px;
+    top: 23px;
+    content: "";
+    height: 2px;
+    width: 123px;
+  }
+
+  .form-item-4 .form-item__subtitle::before {
+    background-image: url("../img/line-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -2px;
+    top: 23px;
+    content: "";
+    height: 2px;
+    width: 123px;
+  }
+
+  .form-item-5 .form-item__subtitle::after {
+    background-image: url("../img/line-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -2px;
+    top: 10px;
+    content: "";
+    height: 2px;
+    width: 123px;
+  }
+
+  .form-item-5 .form-item__subtitle::before {
+    background-image: url("../img/line-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -2px;
+    top: 10px;
+    content: "";
+    height: 2px;
+    width: 123px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-item-1 .form-item__subtitle::after {
+    left: 480px;
+    top: 0;
+    height: 338px;
+  }
+
+  .form-item-3 .form-item__subtitle::after {
+    left: -2px;
+    top: 10px;
+    width: 280px;
+  }
+
+  .form-item-3 .form-item__subtitle::before {
+    right: -2px;
+    top: 10px;
+    width: 280px;
+  }
+
+  .form-item-4 .form-item__subtitle::after {
+    left: -2px;
+    top: 23px;
+    width: 280px;
+  }
+
+  .form-item-4 .form-item__subtitle::before {
+    right: -2px;
+    top: 23px;
+    width: 280px;
+  }
+
+  .form-item-5 .form-item__subtitle::after {
+    left: -2px;
+    top: 10px;
+    width: 280px;
+  }
+
+  .form-item-5 .form-item__subtitle::before {
+    right: -2px;
+    top: 10px;
+    width: 280px;
   }
 }
