@@ -47,6 +47,22 @@
 }
 
 .search-hostel__search {
+  display: inline-block;
+  height: auto;
+  cursor: pointer;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  text-align: center;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     width: 458px;
   }
