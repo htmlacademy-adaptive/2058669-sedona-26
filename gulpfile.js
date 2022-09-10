@@ -32,7 +32,7 @@ export const styles = () => {
 
 // HTML
 
- const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
@@ -48,20 +48,20 @@ const scripts = () => {
 
 //IMG
 
- const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'));
 }
 
- const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
 }
 
 //WebP
 
- const createwebp = () => {
+const createwebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp:{}
@@ -71,12 +71,12 @@ const scripts = () => {
 
 //SVG
 
- const svg = () =>
-   gulp.src('source/img/*.svg')
+const svg = () =>
+  gulp.src('source/img/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -88,7 +88,7 @@ const scripts = () => {
 
 //Copy
 
- const copy = (done) => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
